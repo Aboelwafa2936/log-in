@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="1550654650e4e433c1b4db47718eae4c.jpg">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="w-70 log-in">
+        <div class="container position-relative">
+            <div class="shapes">
+                <div class="bottom-circle"></div>
+                <div class="top-circle"></div>
+                <div class="small-circle"></div>
+                <div class="smallest-circle"></div>
+                <div class="form">
+                    <div class="wrapper">
+                        <h1>LOG IN</h1>
+                        <h2>To Continue</h2>
+                    </div>
+                </div>
+            </div>
+            <form method="post" id="loginForm">
+                <div class="form-log text-center">
+                    <div class="form-floating mb-4 shadow">
+                        <input type="text" value="" class="form-control" id="userName" placeholder=""  autocomplete="username">
+                        <label for="userName">User Name</label>
+                    </div>
+                    <div class="form-floating mb-4 shadow">
+                        <input type="password" value="" class="form-control" id="userPass" placeholder="" autocomplete="current-password">
+                        <label for="userPass">Password</label> 
+                        <i id="loginEyeIcon" class="fa-regular fa-eye d-none float-end"></i>
+                    </div>
+                    <div class="text-danger" id="loginAlert"></div>
+                    <a id="homeLink" class="text-decoration-none text-white" href=""><button id="logBtn" class="btn btn-log text-white shadow">LOG IN</button></a>
+                    <a id="signUpLink" href="" class="d-block mt-4">New here? Sign up and join our vibrant community!</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="w-70 sign-up d-none">
+        <div class="container text-center">
+            <div class="shape"></div>
+            <div class="text">
+                <h1>SIGN UP</h1>
+                <h2>To Continue</h2>
+            </div>
+            <form method="post" id="signupForm">
+                <div class="form-sign text-center">
+                    <div class="form-floating mb-4 shadow">
+                        <input type="text" class="form-control" id="signUserName" placeholder=""  autocomplete="username">
+                        <label for="signUserName">User Name</label>
+                    </div>
+                    <div class="form-floating mb-4 shadow">
+                        <input type="email" class="form-control" id="userEmail" placeholder="">
+                        <label for="userEmail">Email</label>
+                    </div>
+                    <div class="form-floating mb-4 shadow">
+                        <input type="password" class="form-control" id="signUserPass" placeholder="" autocomplete="current-password">
+                        <label for="signUserPass">Password</label>
+                        <i id="signEyeIcon" class="fa-regular fa-eye d-none float-end"></i>
+                    </div>
+                    <div class="text-danger" id="signAlert"></div>
+                    <button id="signBtn" value="submit" class="btn btn-sign shadow">SIGN UP</button>
+                    <a id="logInLink" href="" class="d-block mt-4">Already part of our community? Sign in and continue your adventure with us!</a>
+                </div>
+            </form>
+        </div>
+    </section>    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
