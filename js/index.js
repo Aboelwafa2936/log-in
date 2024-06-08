@@ -314,7 +314,3 @@ document.addEventListener("DOMContentLoaded", function () {
         greetingText.textContent = `Welcome back, ${user}!`; // Use the user's name retrieved from localStorage
     }
 });
-// Function to log out a user
-function logout() {
-    localStorage.removeItem('user');
-}
